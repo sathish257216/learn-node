@@ -10,11 +10,17 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
     const found = users.data.filter(user => user.id === parseInt(req.params.id));
-    console.log('found ---->>>  ', found, req.params.id);
     if(found.length) {
         res.json(found);
     } else {
         res.sendStatus(400);
+    }
+});
+
+router.delete('/:id', (req, res) => {
+    const found = users.data.filter(user => user.id !== parseInt(req.params.id));
+    if(found) {
+        res.json(found);
     }
 });
 

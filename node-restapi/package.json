@@ -1,0 +1,20 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "Rest API demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Node",
+    "Rest",
+    "API"
+  ],
+  "author": "Sathish Kumar Subramaniyan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
