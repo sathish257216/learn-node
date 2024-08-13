@@ -1,4 +1,4 @@
-const {calculateSum, calculateMultiply} = require("./sum")
+const {calculateSum, calculateDecimal, calculateMultiply} = require("./calculate/index")
 
 let a=100;
 let b=200;
