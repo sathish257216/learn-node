@@ -1,8 +1,11 @@
+const mongoose = require('mongoose');
 const express = require("express");
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+mongoose.connect('mongodb://localhost:27017/userdb');
 
 app.use("/api/users", require("./routes/api/users"));
 
